@@ -1,0 +1,346 @@
+\documentclass{resume}
+\usepackage[francais]{babel} 
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[paper=a4paper, top=1cm, bottom=1cm, left=2cm, right=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{amsmath, amsthm}
+\usepackage{amsfonts,amssymb}
+\usepackage[normalem]{ulem}
+\usepackage{alltt,xspace}
+
+\newcommand{\lieu}[1]{\textbf{#1}\ }
+\newcommand{\activite}[1]{\textbf{#1}\ }
+\newcommand{\comment}[1]{\textsl{#1}\ }
+\newcommand{\link}[1]{\underline{\textcolor{blue}{#1}}}
+\renewcommand{\ttdefault}{pcr}
+\renewcommand{\rmdefault}{ptm}
+%\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+
+\begin{document}
+
+\begin{chapeau}
+  \begin{adresse}
+    \textbf{Fabien Le Mentec}\\
+    Apartment 605, 30 rue Felix Esclangon \\
+    38000 Grenoble, France	\\
+    \ligne\\
+    Tel: 06 95 36 54 83\\
+    E-mail : \texttt{fabien.lementec@gmail.com}\\
+    \ligne\\
+    May, 17th 1984 \\
+    French nationality \\
+  \end{adresse}
+  \begin{etatcivil}
+    & \includegraphics*[width=2.3cm]{moi.eps}\\[2mm]
+  \end{etatcivil}
+\end{chapeau}
+
+\vspace{0.4cm}
+
+\begin{center}
+  \textbf{\huge{Research and Development Engineer}}
+\end{center}
+
+\vspace{0.4cm}
+
+\begin{rubriquetableau}[2cm]{Education}
+  2008
+  & \activite{\small{Master degree in computer science. EPITECH, Paris.}}
+  \\[0.5mm]
+
+  2006
+  & \activite{\small{Bachelor degree in computer science. EPITECH, Paris.}}
+  \\[0.5mm]
+
+\end{rubriquetableau}
+
+\vspace{0.5cm}
+
+\begin{rubriquetableau}[3cm]{Employment}
+  \small{2012 - present}
+  & \activite{\small{Research and development engineer at ESRF}}
+  \begin{small}
+    \begin{itemize}
+    \item design and implementation of a data acquisition framework for 2D XRay detectors
+      \begin{itemize}
+      \item PCIe over cable and 10Gbe FPGA based DMA engine
+      \item high performance LINUX software stack and drivers
+      \item embedded LINUX system for in house acquisition and control platforms
+      \item participation to XRAY instrumentation international conferences
+      \end{itemize}
+    \end{itemize}
+  \end{small}
+  \\[0.7mm]
+
+  \small{2010 - 2012}
+  & \activite{\small{Research and development engineer at INRIA, MOAIS group}}
+  \begin{small}
+    \begin{itemize}
+    \item Programming multicore and heterogeneous architectures
+      \begin{itemize}
+      \item XKAAPI runtime design and implementation (http://kaapi.gforge.inria.fr)
+      \item fine grain concurrency, workstealing based scheduling
+      \item high performance scientific computing
+      \item GPU NVIDIA programming with CUDA
+      \item implementation of a compiler to support parallelism constructs in C/C++/Fortran
+      \item lead engineer in partnerships involving CEA Saclay, ANR REPDYN
+      \item participation to HPC international conferences
+      \end{itemize}
+    \end{itemize}
+  \end{small}
+  \\[0.7mm]
+
+  \small{2009}
+  & \activite{\small{Research and development contractor at Luceor (3 months)}}
+  \begin{small}
+    \begin{itemize}
+    \item 802.11 Mesh Networking
+      \begin{itemize}
+      \item Linux kernel software for Atheros Mips System On Chip
+      \end{itemize}
+    \end{itemize}
+  \end{small}
+  \\[0.7mm]
+
+  \small{2007 - 2009}
+  & \activite{\small{Research and development engineer at Skyrecon Systems (2 years)}}
+  \begin{small}
+    \begin{itemize}
+    \item Design and implementation of a disk encryption solution for Windows systems
+      \begin{itemize}
+      \item low level layers (bios, driver)
+      \end{itemize}
+    \item Network development
+      \begin{itemize}
+      \item network programming at the NDIS layer
+      \end{itemize}
+    \item Windows kernel and security related research
+      \begin{itemize}
+      \item Intel VT virtualization
+      \item AFD kernel vulnerability, CVE-2008-3464
+      \end{itemize}
+    \end{itemize}
+  \end{small}
+  \\[0.7mm]
+
+  \small{2006}
+  & \activite{\small{Embedded developer at Euriware (intern, 6 months)}}
+  \begin{small}
+    \begin{itemize}
+    \item design and implementation of a serial data sensor
+      \begin{itemize}
+      \item LINUX kernel driver, PC104 architecture
+      \item TCP/IP data server and client
+      \end{itemize}
+      \vspace{0.3cm}
+    \end{itemize}
+  \end{small}
+  \\[0.7mm]
+
+  \small{2008 - present}
+  & \activite{\small{Teaching lectures. EPITA}}
+  \begin{small}
+    \begin{itemize}
+    \item Kaneton Micro Kernel project
+    \item Windows NT drivers course
+    \item CAN, USB courses
+    \end{itemize}
+  \end{small}
+  \\[0.7mm]
+\end{rubriquetableau}
+
+\newpage
+\begin{rubriquetableau}[3cm]{Publications and Reports}
+  \small{2010 - 2011}
+  & \activite{}
+  \begin{small}
+    \begin{itemize}
+    \item \textit{The X-Kaapi's programming model and User's manual}
+      \begin{itemize}
+      \item F. Le Mentec, T. Gautier, V. Danjean
+      \item Technical Report INRIA, 2011.
+      \end{itemize}
+
+    \item \textit{A Work Stealing Algorithm for Parallel Loops on Shared Cache Multicores}
+      \begin{itemize}
+      \item Marc Tchiboukdjian, Vincent Danjean, Thierry Gautier, Fabien Le Mentec and Bruno Raffin
+      \item Highly Parallel Processing on a Chip (HPPC). 2010
+      \item http://moais.imag.fr/membres/marc.tchiboukdjian/pub/hppc10.pdf
+      \end{itemize}
+
+    \item \textit{Adaptive Algorithms for Shared Cache on Multicore}
+      \begin{itemize}
+      \item Marc Tchiboukdjian, Vincent Danjean, Thierry Gautier, Fabien Le Mentec, Bruno Raffin
+      \item Research Report, ({RR}-7256):17, INRIA, apr 2010
+      \item http://hal.inria.fr/inria-00473617/PDF/RR-7256.pdf
+      \end{itemize}
+
+    \item \textit{Programmation Hybride avec XKAAPI}
+      \begin{itemize}
+      \item LOGPROG Workgroup presentations (2010 and 2011)
+      \end{itemize}
+
+    \end{itemize}
+  \end{small}
+\end{rubriquetableau}
+
+\begin{rubriquetableau}[3cm]{Associative Experience}
+  \small{2010 - present}
+  & \activite{\small{IGREBOT Robotic Association}}
+  \begin{small}
+    \begin{itemize}
+    \item http://igrebot.fr
+    \item designing a robot for the EUROBOT competition
+    \item embedded software development
+      \begin{itemize}
+      \item CAN and I2C communication
+      \item main boards: Renesas/RX62N and SBC2410/ARM
+        \begin{itemize}
+        \item technical report: http://www.renesasrulz.com/docs/DOC-1764
+        \end{itemize}
+      \item engine controlling and IO boards: DSPIC33F, DSPIC30F
+      \end{itemize}
+    \item simulation software (C++, multithreaded)
+    \end{itemize}
+  \end{small}
+  \\[0.6mm]
+
+  \small{2010}
+  & \activite{\small{ACONIT Association}}
+  \begin{small}
+    \begin{itemize}
+    \item http://www.aconit.org
+    \item design and implementation of a PIC18F USB device to
+      interface a PC and mechanical tape readers
+    \item in charge of firmware and software development
+    \item project documentation:
+      http://www.aconit.org/collection/documation-usb
+    \item source repositories:
+      \begin{itemize}
+      \item https://github.com/texane/documation\_m600
+      \item https://github.com/texane/slosyn
+      \end{itemize}
+    \end{itemize}
+  \end{small}
+  \\[0.6mm]
+
+  \small{2006}
+  & \activite{\small{EPITA system and security laboratory}}
+  \begin{small}
+    \begin{itemize}
+    \item microkernel project
+    \item system and security teaching assistant
+    \end{itemize}
+  \end{small}
+  \\[0mm]
+
+\end{rubriquetableau}
+
+\begin{rubriquetableau}[3cm]{Open Source Projects}
+  &\activite{\small{STLINK: STM32 discovery line LINUX programmer}}
+  \begin{small}
+    \begin{itemize}
+    \item https://github.com/texane/stlink
+    \item >100 users, >10 contributors
+    \end{itemize}
+  \end{small}
+  \\[0.6mm]
+
+  &\activite{\small{VPCIE: PCIe endpoint virtualization}}
+  \begin{small}
+    \begin{itemize}
+    \item https://github.com/texane/vpcie
+    \end{itemize}
+  \end{small}
+  \\[0.6mm]
+
+  &\activite{\small{LFS: Linux From Scratch building system}}
+  \begin{small}
+    \begin{itemize}
+    \item https://github.com/texane/lfs
+    \end{itemize}
+  \end{small}
+  \\[0.6mm]
+
+  &\activite{\small{NRF: wireless mon channel speaker using NORDIC chipsets and ATMEGA328P}}
+  \begin{small}
+    \begin{itemize}
+    \item https://github.com/texane/nrf
+    \end{itemize}
+  \end{small}
+  \\[0mm]
+
+\end{rubriquetableau}
+
+\newpage
+\begin{rubriquetableau}[3cm]{Skills}
+  \textbf{\small{Software}}
+  & \begin{itemize}
+      \begin{small}
+      \item Programming languages: C/C++, Assembly, Python, VHDL
+      \item Kernels: Linux (including realtime), UNIX, Windows NT
+      \item Parallelism: OpenMP, TBB, CUDA. hybrid architectures (ex: NUMA, 96 cores, 8 GPUs)
+      \item Scientific: Matlab/Octave, linear algebra, imaging and signal processing, classification
+      \end{small}
+    \end{itemize}
+  \\[0mm]
+
+  \textbf{\small{Architectures}}
+  & \begin{itemize}
+      \begin{small}
+      \item microprocessors: IA32, ARM (esp. CORTEX M3 serie), SPARC
+      \item microcontrollers: MIPS SoC, Microchip PICs, RX62N, AVR
+      \item FPGAs: XILINX (ML605, KC705)
+      \end{small}
+    \end{itemize}
+  \\[0mm]
+
+  \textbf{\small{Networking}}
+  & \begin{itemize}
+      \begin{small}
+      \item TCP-IP, IPv6, Ethernet, 802.11, mesh networking (OLSR)
+      \item PCIe, USB, CAN, I2C, SPI, serial industrial buses (MODBUS...)
+      \end{small}
+    \end{itemize}
+  \\[0mm]
+
+  \textbf{\small{Security}}
+  & \begin{itemize}
+      \begin{small}
+      \item symetric cryptography
+      \item binary analysis, software and network reverse engineering
+      \end{small}
+    \end{itemize}
+  \\[0mm]
+
+  \textbf{\small{Misc}}
+  & \begin{itemize}
+      \begin{small}
+      \item digital electronics
+      \item CAO (SOLIDWORKS), CNC milling, laser cutting
+      \end{small}
+    \end{itemize}
+  \\[0mm]
+
+\end{rubriquetableau}
+
+\vspace{0.4cm}
+
+\begin{rubriquetableau}[3cm]{Languages}
+  \textbf{\small{French}}
+  & \small{Mother tongue}
+  \\[0.6mm]
+
+  \textbf{\small{English}}
+  & \small{TOEIC (gr. 800), good written and spoken skills (esp. technical materials)}
+  \\[0.6mm]
+
+  \textbf{\small{German}}
+  & \small{School notions}
+  \\[0.6mm]
+\end{rubriquetableau}
+
+\end{document}
