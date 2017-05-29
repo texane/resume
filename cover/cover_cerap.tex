@@ -1,0 +1,54 @@
+% Cover letter using letter.cls
+\documentclass[11pt]{letter} % default is 10 pt
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+\usepackage{newcent}   % uses new century schoolbook postscript font 
+% the following commands control the margins:
+\topmargin=-1in    % Make letterhead start about 1 inch from top of page
+\textheight=8.5in  % text height can be bigger for a longer letter
+\oddsidemargin=0pt % leftmargin is 1 inch
+\textwidth=6.5in   % textwidth of 6.5in leaves 1 inch for right margin
+
+\begin{document}
+
+
+\signature{Le Mentec Fabien}               % name for signature 
+\longindentation=0pt                       % needed to get closing flush left
+\let\raggedleft\raggedright                % needed to get date flush left
+ 
+\begin{letter}{}
+\vfill % forces letterhead to top of page
+
+\opening{Madame, Monsieur,} 
+
+\noindent
+Je vous soumet ma candidature spontan\'{e}e pour un poste d'ing\'{e}nieur en
+informatique et \'{e}lectronique.
+
+\noindent
+Je suis actuellement ing\'{e}nieur \`{a} l'ESRF, le Synchrotron Grenoblois. Je m'occupe de la conception et de l'impl\'{e}mentation des syst\`{e}mes embarqu\'{e}s sur les instruments d'acquisition et de contr\^{o}le.
+
+\noindent
+Mes diff\'{e}rentes exp\'{e}riences m'ont permis d\'{e}velopper des comp\'{e}tences
+techniques, r\'{e}dactionnelles et humaines dans les diff\'{e}rents aspects des
+syst\`{e}mes embarqu\'{e}s, et ce dans de projets multidisciplinaires:
+\begin{itemize}
+\item r\'{e}f\'{e}rent quant \`{a} la conception et l'impl\'{e}mentation logicielle,
+\item participation \`{a} l'impl\'{e}mentation de l'\'{e}lectronique analogique et digitale,
+\item r\'{e}daction de rapports et papiers pour conf\'{e}rences.
+\end{itemize}
+
+\noindent
+Je suis g\'{e}n\'{e}ralement qualifi\'{e} comme une personne pragmatique et d'un
+tr\`{e}s bon niveau technique. Je sais aussi faire preuve d'abstraction et du recul
+n\'{e}cessaire \`{a} la r\'{e}alisation des t\^{a}ches qui m'incombent.
+
+\noindent
+Je reste \`{a} votre disposition pour toute information suppl\'{e}mentaire,
+
+\closing{Cordialement,}
+
+ 
+\end{letter}
+ 
+
+\end{document}
